@@ -64,3 +64,29 @@ for (var i = 0; i < studenti.length; i++) {
 Parte 3
 Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 */
+
+// 1. Richiedo i valori all'utente tramite un prompt, con relativi controlli
+do {
+  var nome = prompt("Inserisci nome studente");
+} while (!isNaN(nome));
+
+do {
+  var cognome = prompt("Inserisci cognome studente");
+} while (!isNaN(cognome));
+
+do {
+  var eta = parseInt(prompt("Inserisci età studente"));
+} while (isNaN(eta));
+
+// 2. Definisco un nuovo oggetto in cui inserire le nuove proprietà
+var nuovoStudente = {};
+
+// 3. Aggiungo i valori inseriti dall'utente nel nuovo oggetto creato
+nuovoStudente.nome = nome;
+nuovoStudente.cognome = cognome;
+nuovoStudente.eta = eta;
+// console.log(nuovoStudente);
+
+// 4. Aggiungo il nuovo oggetto nell'array precedente che ho creato alla parte 2.
+studenti.push(nuovoStudente);
+console.log(studenti);
