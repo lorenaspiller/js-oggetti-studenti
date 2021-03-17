@@ -17,11 +17,48 @@ for (var key in studente) {
 }
 
 
+
 /*
 Parte 2
 Creare un array di oggetti di studenti.
 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 */
+
+// 1. Creo un array di oggetti di studenti
+var studenti = [
+  {
+    nome: "Natasha",
+    cognome: "Romanoff",
+    eta: 36,
+  },
+  {
+    nome: "Tony",
+    cognome: "Stark",
+    eta: 51,
+  },
+  {
+    nome: "Steve",
+    cognome: "Rogers",
+    eta: 103,
+  },
+  {
+    nome: "Bruce",
+    cognome: "Banner",
+    eta: 58,
+  },
+  {
+    nome: "Wanda",
+    cognome: "Maximoff",
+    eta: 32,
+  },
+];
+
+// 2. Ciclo su tutti gli studenti e stampo per ognuno di essi, nome e cognome.
+for (var i = 0; i < studenti.length; i++) {
+  console.log(studenti[i].nome + " " + studenti[i].cognome);
+}
+
+
 
 /*
 Parte 3
